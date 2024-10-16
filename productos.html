@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maximum Peru</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+  <div class="sticky-top">
+    <div class="bg-custom-red py-2" style="z-index: 1030;">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <a href="https://www.facebook.com/profile.php?id=61566998997712" class="me-3 text-white" target="_blank"
+            aria-label="Facebook">
+            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="https://www.instagram.com/perumaximum" class="me-3 text-white" target="_blank"
+            aria-label="Instagram">
+            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="https://www.tiktok.com/@perumaximum" class="me-3 text-white" target="_blank" aria-label="Twitter">
+            <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="https://www.youtube.com/@MaximumPeru" class="me-3 text-white" target="_blank" aria-label="YouTube">
+            <i class="bi bi-youtube" style="font-size: 1.5rem;"></i>
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <form class="d-flex me-3">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+
+          <a href="#" class="me-3 text-white" aria-label="Favoritos">
+            <i class="bi bi-heart" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="#" class="me-3 text-white" aria-label="Usuario">
+            <i class="bi bi-person" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="#" class="text-white" aria-label="Carrito de Compras">
+            <i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body" style="z-index: 1020;">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo-maximum.png" alt="Maximun Peru" style="height: 50px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comunidad.html">Comunidad</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="video-background">
+    <video autoplay muted loop class="video-bg">
+      <source src="img/banner-servicios_web.mp4" type="video/mp4">
+    </video>
+    <div class="container content">
+      <h1>PRODUCTOS</h1>
+    </div>
+  </div>
+
+  <a href="https://api.whatsapp.com/send?phone=51930415172&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."" class="
+    whatsapp-button no-link" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <div class="container my-4">
+    <div class="row mt-4 bg-dark align-items-center border rounded">
+      <div class="col-md-6 d-flex align-items-center">
+        <nav class="woocommerce-breadcrumb" aria-label="Breadcrumb">
+          <a class="breadcrumb-link" href="index.html">Inicio</a>
+          <span class="breadcrumb-last">/ Productos</span>
+        </nav>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-end">
+        <form class="woocommerce-ordering d-flex align-items-center">
+          <select name="orderby" class="form-select custom-select me-2" aria-label="Pedido de la tienda">
+            <option value="menu_order" selected="selected">Orden predeterminado</option>
+            <option value="popularity">Ordenar por popularidad</option>
+            <option value="rating">Ordenar por puntuación media</option>
+            <option value="date">Ordenar por los últimos</option>
+            <option value="price">Ordenar por precio: bajo a alto</option>
+            <option value="price-desc">Ordenar por precio: alto a bajo</option>
+          </select>
+          <input type="hidden" name="paged" value="1">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-12">
+        <aside class="bg-light p-3 mb-4 border rounded">
+          <h5 class="widget-title fw-bold">Categorías</h5>
+          <ul class="list-unstyled product-categories mt-3">
+            <li class="cat-item"><a href="#">Cables</a></li>
+            <li class="cat-item"><a href="#">Redes</a></li>
+            <li class="cat-item"><a href="#">Sistema contra incendios</a></li>
+            <li class="cat-item"><a href="#">Video vigilancia</a></li>
+            <li class="cat-item"><a href="#">Iluminación</a></li>
+            <li class="cat-item"><a href="#">Más categorías...</a></li>
+          </ul>
+        </aside>
+
+        <aside class="bg-light p-3 mb-4 border rounded">
+          <h5 class="widget-title fw-bold">Marcas</h5>
+          <ul class="list-unstyled product-categories mt-3">
+            <li class="cat-item"><a href="#">Mircom</a></li>
+            <li class="cat-item"><a href="#">Ezviz</a></li>
+            <li class="cat-item"><a href="#">Sentek</a></li>
+            <li class="cat-item"><a href="#">TP-Link</a></li>
+            <li class="cat-item"><a href="#">HikVision</a></li>
+            <li class="cat-item"><a href="#">Más Marcas...</a></li>
+          </ul>
+        </aside>
+
+        <aside class="image-aside">
+          <img src="img/simplex-4100es-341x1024.jpg" alt="Imagen">
+        </aside>
+      </div>
+
+      <div class="col-lg-9 col-md-8 col-12">
+        <div class="row">
+          <!-- PRODUCTO -->
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/FA-106R_c53aa88f-fcc5-4029-a968-a0bd1f464b8f-300x300.jpg"
+                  class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">FA-106R</h5>
+                <h6 class="price">Precio: S/. 1,229.00</h6>
+                <h6>Sistema contra incendios</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Panel de Alarma contra incendio certificado convencional 6 zonas 24v 2 hilos
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/mircom-300x300.png" class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">FA-301-8LDR</h5>
+                <h6 class="price">Precio: S/. 2,491.00</h6>
+                <h6>Sistema contra incendios</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Panel de alarma contra incendio certificado 8 zonas 24v 2 hilos</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/RAM-300LCDR-300x300.jpg" class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">RAM-300LCDR</h5>
+                <h6 class="price">Precio: S/. 1,251.00</h6>
+                <h6>Sistema contra incendios</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Anunciador remoto LCD 2 líneas para FX-353 y FX-350-60</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/FR-320WR-left_sm-300x300.jpg" class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">FR-320-R</h5>
+                <h6 class="price">Precio: S/. 2,545.00</h6>
+                <h6>Sistema contra incendios</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Panel Convencional certificado de descarga de agente limpio</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/CS-C2C-B0-1E2WF-300x300.jpg" class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">CS-C2C-B0-1E2WF</h5>
+                <h6 class="price">Precio: S/. 169.00</h6>
+                <h6>Video vigilancia</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Cámara de seguridad Ezviz C2C wifi, interior, 1080P, fija, infrarrojo</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/cs-c8c-a0-1f2wf-300x300.jpg" class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">cs-c8c-a0-1f2wf</h5>
+                <h6 class="price">Precio: S/. 185.00</h6>
+                <h6>Video vigilancia</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Cámara IP PTZ Lite Int 1080p Wifi | Cobertura de 360°</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/HK-DS2CE16H0T-ITPF-300x300.jpg" class="card-img-top img-fluid"
+                  alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">HK-DS2CE16H0T-ITPF</h5>
+                <h6 class="price">Precio: S/. 110.00</h6>
+                <h6>Video vigilancia</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Cámara tubo exterior 5MP</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/IPC-A22E-G-300x300.jpg" class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">IPC-A22E-G</h5>
+                <h6 class="price">Precio: S/. 140.00</h6>
+                <h6>Video vigilancia</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Cámara domo Ranger 2 wifi IP 1080p</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/SD-2WP-LED_2bddf508-e684-45a7-991b-21b61f52346d-300x300.jpg"
+                  class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">SD-4WP</h5>
+                <h6 class="price">Precio: S/. 89.00</h6>
+                <h6>Sistema contra incendios</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Detector de Humo convencional Certificado 2-4hilos 24-12V con base</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/TD-135_d4c6cbfd-1c18-42f0-abbb-69f7cd57ccdb-100x100.jpg"
+                  class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">TD-200</h5>
+                <h6 class="price">Precio: S/. 43.00</h6>
+                <h6>Sistema contra incendios</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Detector de temperatura convencional certificado 94º</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/SD-2WT-LED-300x300.jpg" class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">SD-2WT-LED</h5>
+                <h6 class="price">Precio: S/. 99.00</h6>
+                <h6>Sistema contra incendios</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Detector de humo fotoeléctrico 2 hilos, sensor de calor y salida LED remora
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="card">
+              <a href="#" class="product-image-link">
+                <img src="img/productos/SD-100-2WP_deba1298-ae49-4cb4-a41b-07f4f5022a67-300x300.jpg"
+                  class="card-img-top img-fluid" alt="GENFPLR2X16">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="wd-entities-title">SD-100-4WP</h5>
+                <h6 class="price">Precio: S/. 90.00</h6>
+                <h6>Sistema contra incendios</h6>
+                <a href="https://api.whatsapp.com/send?phone=51934909926&text=Hola Maximum! Vi un producto en la web y deseo cotizarlo."
+                  class="btn btn-black text-white fw-bold mt-2" target="_blank">Cotizar producto</a>
+              </div>
+              <div class="card-footer text-center">
+                <div class="hover-content">Detector Humo certificado convencional con base 4 hilos</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Siguiente</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark p-3">
+    <div class="container">
+      <div class="row">
+
+        <article class="col-12 col-sm-6 col-lg-3 mt-5 mb-5 text-center">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <a href="index.html">
+                <img src="img/logo-maximum.png" alt="logo">
+              </a>
+            </div>
+            <div class="col-12 mb-2">
+              <h5 class="fw-bold">¿NECESITAS AYUDA?</h5>
+            </div>
+            <div class="col-12 mb-2">
+              <h5 class="fw-bold">930415172</h5>
+            </div>
+            <div class="col-12 mb-2">
+              <h5>perumaximun@gmail.com</h5>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3 mt-5 mb-5 d-flex flex-column align-items-center">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h5 class="horarios-atencion fw-bold text-center">Informacion</h5>
+            </div>
+            <div class="col-12 mb-2">
+              <ul class="text-start">
+                <li><a class="no-link" href="nosotros.html">Nosotros</a></li>
+                <li><a class="no-link" href="nosotros.html">Politica de Privacidad</a></li>
+                <li><a class="no-link" href="contacto.html">Contactenos</a></li>
+                <li><a class="no-link" href="nosotros.html">Garantia y Devoluciones</a></li>
+                <li><a class="no-link" href="nosotros.html">Libro de Reclamaciones</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3 mt-5 mb-5 text-center">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h5 class="horarios-atencion fw-bold">Horarios de Atencion</h5>
+            </div>
+            <div class="col-12 mb-2">
+              <h5 class="fw-bold">Lunes a Viernes:</h5>
+            </div>
+            <div class="col-12 mb-1">
+              <h5>9:00 AM - 7:00 PM</h5>
+            </div>
+            <div class="col-12 mb-2">
+              <h5 class="fw-bold">Sabado:</h5>
+            </div>
+            <div class="col-12 mb-1">
+              <h5>9:00 AM - 3:00 PM</h5>
+            </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3 mt-5 mb-5 text-center">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h5 class="horarios-atencion fw-bold">Direccion</h5>
+            </div>
+            <div class="col-12 mb-1">
+              <h5>C.C Cyber Plaza</h5>
+              <h5>Av. Garcilazo de la VEga #1348 - Int. SSB 142 - Cercado de Lima</h5>
+            </div>
+        </article>
+
+      </div>
+    </div>
+
+    <hr class="divider w-100">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-1">
+      <div class="bold-text text-center text-md-start">
+        &copy; 2024 MaximunPeru - Todos los Derechos Reservados
+      </div>
+      <div class="text-center mt-2 mt-md-0">
+        <img src="img/pagos.png" alt="Métodos de pago" width="260" class="img-fluid mx-auto">
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

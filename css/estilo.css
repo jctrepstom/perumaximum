@@ -1,0 +1,794 @@
+/* Custom Propertis */
+
+/* Reset Style */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Bootstrap Style */
+.navbar-brand img {
+  width: auto;
+  height: 3.5rem;
+}
+
+.bg-dark {
+  background-color: #d9d9d9 !important;
+}
+
+.bg-custom-red {
+  background-color: #e70303;
+}
+
+.nav-link {
+  margin-left: 3rem;
+  color: black;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+#carouselOne .carousel-inner img {
+  width: 100%;
+  /* Asegura que la imagen ocupe el 100% del contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  max-height: 800px;
+  /* Ajusta esta altura según sea necesario */
+  object-fit: cover;
+  /* Asegura que la imagen cubra el contenedor sin deformarse */
+}
+
+/* My style */
+
+.bold-text {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: Impact, sans-serif;
+}
+
+.no-link {
+  text-decoration: none;
+  /* Quita el subrayado */
+  color: inherit;
+  /* Toma el color del texto padre */
+}
+
+.custom-height {
+  width: auto;
+  height: 440px;
+  /* Ajusta este valor según tus necesidades */
+  object-fit: cover;
+  /* Esto asegurará que las imágenes mantengan su proporción sin distorsionarse */
+}
+
+.fa.rounded-circle.fa-3x,
+.fa.fa-3x.rounded-empty-circle,
+.fa.rounded.fa-3x,
+.fa.rounded-0.fa-3x,
+.fa.rounded-leaf.fa-3x,
+.fa.img-thumbnail.fa-3x,
+.fa.shadow.fa-3x {
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.fa.rounded-circle,
+.fa.rounded-empty-circle,
+.fa.rounded,
+.fa.rounded-0,
+.fa.rounded-leaf,
+.fa.img-thumbnail,
+.fa.shadow {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.fa {
+  font-family: "FontAwesome" !important;
+}
+
+.bg-o-color-1 {
+  background-color: #e70303 !important;
+  color: #ffffff;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa {
+  font: normal normal normal 40px / 1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rounded-circle,
+.dri.rounded-empty-circle,
+.fa.rounded-empty-circle {
+  border-radius: 50% !important;
+}
+
+.tooltip555330 {
+  width: 5rem;
+}
+
+.rotate-left {
+  display: inline-block;
+  /* Asegúrate de que el ícono sea un bloque en línea */
+  transform: rotateY(180deg);
+  /* Rota el ícono horizontalmente hacia la izquierda */
+  transition: transform 0.3s ease;
+  /* Transición suave (opcional) */
+}
+
+h6 {
+  font-weight: bold;
+}
+
+#carouselTwo .carousel-item img {
+  width: 100%;
+  /* Se adapta al contenedor */
+  height: auto;
+  /* Mantiene la proporción */
+  max-width: 300px;
+  /* Máximo de 300px */
+  max-height: 300px;
+  /* Máximo de 300px */
+}
+
+.carousel {
+  cursor: grab;
+  /* Cambia el cursor a mano abierta */
+}
+
+#carouselTwo.active {
+  cursor: grabbing;
+  /* Cambia el cursor al arrastrar */
+}
+
+.divider {
+  border: 1px solid black;
+  /* Color y grosor de la línea */
+  margin-bottom: 20px;
+  /* Espacio debajo de la línea */
+}
+
+.text-center {
+  text-align: center;
+  /* Esto aplicará la alineación centrada */
+}
+
+/* Ajustes específicos para los elementos h5 */
+h5 {
+  font-size: 1rem;
+  /* Ajusta este valor según sea necesario */
+  line-height: 1.2;
+  /* Ajusta este valor para controlar el espaciado entre líneas */
+}
+
+.mt-5,
+.mb-5 {
+  margin-top: 2rem;
+  /* Ajusta el espaciado superior */
+  margin-bottom: 3rem;
+  /* Ajusta el espaciado inferior */
+}
+
+.horarios-atencion {
+  font-size: 1.2rem !important;
+  /* Tamaño normal */
+  line-height: 1.5;
+  /* Espaciado normal */
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  /* Altura completa de la pantalla */
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  /* Video detrás del contenido */
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  /* Cubre todo el fondo */
+}
+
+/* Pseudo-elemento para el degradado */
+.video-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(255, 51, 0, 0.6));
+  z-index: 0;
+  /* Degradado entre el video y el contenido */
+}
+
+.container.content {
+  position: relative;
+  z-index: 1;
+  /* El contenido está encima del degradado */
+  color: white;
+  text-align: center;
+  padding-top: 10vh;
+  /* Ajusta el texto a la posición deseada */
+  font-size: 3em;
+  /* Ajusta el tamaño del texto */
+}
+
+ul {
+  padding-left: 100px;
+  /* Si quieres mantener un margen izquierdo */
+}
+
+.container.content h1 {
+  font-size: 1.5em;
+  /* Cambia el tamaño de la fuente */
+  color: #ffffff;
+  /* Cambia el color (ejemplo: dorado) */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  /* Sombra para mejorar la legibilidad */
+}
+
+.padding-top {
+  padding-top: 5rem;
+}
+
+.card-left {
+  background-color: black;
+}
+
+.custom-bg-black {
+  background-color: black;
+}
+
+.btn-black {
+  background-color: #000;
+  /* Fondo negro */
+  border-color: #000;
+  /* Borde negro */
+  transition: background-color 0.3s ease;
+  /* Suavizar la transición */
+}
+
+.btn-black:hover {
+  background-color: #ff0000;
+  /* Fondo rojo al pasar el mouse */
+  border-color: #ff0000;
+  /* Borde rojo al pasar el mouse */
+}
+
+.icono-redes-sociales i {
+  color: black;
+  /* Color negro por defecto */
+  transition: color 0.3s ease;
+  /* Transición suave */
+}
+
+.icono-redes-sociales i:hover {
+  color: red;
+  /* Cambia a rojo al pasar el mouse */
+}
+
+.icono-redes-sociales p {
+  color: black;
+  /* Color negro por defecto */
+  transition: color 0.3s ease;
+  /* Transición suave */
+}
+
+.icono-redes-sociales p:hover {
+  color: red;
+  /* Cambia a rojo al pasar el mouse */
+}
+
+.woocommerce-breadcrumb {
+  margin-bottom: 1rem;
+}
+
+.card {
+  border: none;
+  /* Sin borde en la tarjeta */
+  transition: transform 0.2s;
+  /* Transición suave */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  /* Efecto de zoom al pasar el ratón */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /* Sombra más intensa al pasar el ratón */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  /* Color principal */
+  border-color: #007bff;
+  /* Color del borde */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  /* Color al pasar el ratón */
+  border-color: #0056b3;
+  /* Color del borde al pasar el ratón */
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  /* Color del borde */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  /* Color de fondo al pasar el ratón */
+  color: white;
+  /* Color del texto al pasar el ratón */
+}
+
+.custom-select {
+  background-color: transparent;
+  /* Sin fondo */
+  border: none;
+  /* Sin borde */
+  border-bottom: 1px solid #ff0000;
+  /* Línea blanca abajo */
+  color: #000000;
+  /* Color del texto */
+  outline: none;
+  /* Sin contorno al hacer clic */
+  padding: 0.25rem 0;
+  /* Espaciado vertical reducido */
+  font-size: 1rem;
+  /* Tamaño de fuente */
+  width: 18rem;
+  /* Ancho automático */
+  margin: 0;
+  /* Sin márgenes */
+}
+
+.custom-select:focus {
+  border-bottom: 2px solid #007bff;
+  /* Línea azul al enfocar */
+}
+
+.breadcrumb-link {
+  color: black;
+  /* Color del texto del breadcrumb */
+  text-decoration: none;
+  /* Sin subrayado */
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+  /* Subrayado al pasar el ratón */
+}
+
+.bg-dark {
+  padding: 10px 0;
+  /* Espaciado vertical adicional */
+}
+
+.product-categories {
+  list-style-type: none;
+  /* Elimina las viñetas de la lista */
+  padding: 0;
+  /* Elimina el padding por defecto */
+}
+
+.product-categories li {
+  margin-bottom: 0.5rem;
+  /* Espacio entre los elementos */
+}
+
+.product-categories li a {
+  text-decoration: none;
+  /* Elimina subrayado */
+  color: #333;
+  /* Color del enlace normal */
+  transition: color 0.3s;
+  /* Transición suave para el cambio de color */
+}
+
+.product-categories li a:hover {
+  color: red;
+  /* Cambia el color a rojo en hover */
+}
+
+.card {
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border: 2px solid red;
+
+}
+
+.btn-custom:hover {
+  background-color: red;
+  color: white;
+}
+
+.card {
+  padding: 10px;
+  /* Reduce el padding dentro de la tarjeta */
+  border: 1px solid #ddd;
+  /* Agrega un borde ligero */
+}
+
+.card img {
+  max-width: 80%;
+  /* Reduce el tamaño de la imagen */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+}
+
+.wd-entities-title {
+  font-size: 1.1rem;
+  /* Reduce el tamaño del título */
+}
+
+.price, h6 {
+  font-size: 0.9rem;
+  /* Reduce el tamaño del precio y la descripción */
+}
+
+.btn-black {
+  font-size: 0.9rem;
+  /* Reduce el tamaño del texto del botón */
+  padding: 5px 10px;
+  /* Ajusta el padding del botón */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centra el contenido horizontalmente */
+}
+
+.product-image-link img {
+  display: block;
+  /* Asegúrate de que la imagen sea un bloque */
+  margin: 0 auto;
+  /* Centra la imagen horizontalmente */
+}
+
+.image-aside {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-aside img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.card {
+  height: 100%;
+  /* Hacer las tarjetas del mismo tamaño */
+}
+
+.card-title {
+  font-size: 1.1rem;
+  /* Tamaño de fuente para el título */
+}
+
+iframe {
+  width: 100%;
+  /* Asegurar que los videos ocupen todo el ancho */
+  height: 300px;
+  /* Altura de los videos */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo de botones flotantes redes sociales */
+
+.container-bar {
+  width: 100%;
+  max-width: 60px;
+  position: fixed;
+  left: 0;
+  top: 25%;
+  z-index: 1050;
+}
+
+.container-bar a {
+  display: block;
+  width: 60px;
+  /* Aumenta el ancho del botón */
+  height: 60px;
+  /* Aumenta la altura del botón */
+  line-height: 60px;
+  /* Centra el texto verticalmente */
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  /* Aumenta el tamaño de los iconos */
+  position: relative;
+  transition: all 500ms ease;
+  color: #fff;
+  margin: 0;
+  /* Elimina márgenes para evitar espacios extra */
+  padding: 0;
+  /* Asegura que no haya relleno adicional */
+}
+
+.container-bar a:hover {
+  background: #1c1c1c;
+  /* Cambia el color de fondo al pasar el mouse */
+}
+
+.container-bar .fa-facebook {
+  background: #3b5998;
+  border-radius: 0px 5px 0px 0px;
+  /* Bordes redondeados a la parte superior */
+}
+
+.container-bar .fa-youtube {
+  background: #e52a23;
+}
+
+.container-bar .fa-instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134b4, #515bd4);
+}
+
+.container-bar .fa-tiktok {
+  background: #000000;
+}
+
+.container-bar #title {
+  position: absolute;
+  background: #1c1c1c;
+  padding: 0px 8px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 15px;
+  top: 12px;
+  left: 0px;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.container-bar a:hover #title {
+  opacity: 1;
+  visibility: visible;
+  left: 64px;
+  /* Desplaza el título a la derecha al pasar el mouse */
+}
+
+.container-bar #title:after {
+  position: absolute;
+  content: '';
+  border-left: 7px solid transparent;
+  border-right: 6px solid #1c1c1c;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  right: 100%;
+  top: 8px;
+}
+
+#btn-social {
+  display: none;
+}
+
+.fa-play {
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+  transform: rotate(180deg);
+  color: #49b0e6;
+}
+
+#btn-social:checked~.fa-play {
+  transform: rotate(0deg);
+}
+
+.icon-social {
+  transition: all 0.4s;
+  transform: translateX(0%);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+#btn-social:checked~.icon-social {
+  transform: translateX(-100%);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.0);
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 400px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-button .fa {
+  font-size: 40px;
+}
+
+#comments {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.comment-item {
+  display: flex;
+  align-items: center;
+}
+
+.comment-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-content {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 400px;
+}
+
+.modal-content {
+  border: none;
+  /* Sin borde en el modal */
+  background-color: transparent;
+  /* Fondo transparente */
+}
+
+.modal-header {
+  border-bottom: none;
+  /* Sin borde en el encabezado */
+}
+
+.modal-footer {
+  border-top: none;
+  /* Sin borde en el pie del modal */
+}
+
+.modal-body {
+  background-color: transparent;
+  /* Fondo del cuerpo del modal transparente */
+  display: flex;
+  /* Para centrar la imagen */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  height: 100vh;
+  /* Altura completa de la pantalla */
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo oscuro del backdrop */
+}
+
+article img {
+  width: 100%;
+  /* Las imágenes ocuparán el 100% del contenedor */
+  height: auto;
+  /* Mantiene la proporción */
+}
+
+#adModal .modal-body img {
+  max-width: 800px;
+  height: auto;
+}
+
+
+
+@media (max-width: 768px) {
+  #adModal .modal-body img {
+    max-width: 300px;
+    /* Tamaño más pequeño en móviles */
+    height: auto;
+    /* Mantiene la proporción */
+  }
+
+  .bg-custom-red .container {
+    flex-direction: column;
+    /* Cambia a columna en pantallas muy pequeñas */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+  }
+
+  .bg-custom-red .d-flex {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg-custom-red .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bg-custom-red .d-flex {
+    margin-bottom: 10px;
+  }
+
+
+}
+
+
+/*// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+
+/*// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+
+/*// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
